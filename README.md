@@ -1,0 +1,1 @@
+# adr-template-minimal.md
