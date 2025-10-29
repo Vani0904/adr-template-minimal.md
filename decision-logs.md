@@ -1,4 +1,4 @@
-# Week 1
+# Week 2
 {short title, representative of solved problem and found solution}
 
 ## Context and Problem Statement
@@ -22,8 +22,6 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 * Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
 * Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
 * … <!-- numbers of consequences can vary -->
-
-# Week 2
 
 # Week 3
 
