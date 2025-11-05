@@ -21,7 +21,7 @@ Chosen option: "Monolithic Architecture", because it simplifies early developmen
 * Bad, because it has Limited scalability and will impact the system as the user base grows.
 
 # Week 3
-{short title, representative of solved problem and found solution}
+Technology Stack Decisions
 
 ## Context and Problem Statement
 
