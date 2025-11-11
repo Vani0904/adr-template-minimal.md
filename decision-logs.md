@@ -25,27 +25,45 @@ Technology Stack Decisions
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+The Complaint Management System needs a working proof of concept (POC) that demonstrates the core system functions. With the Technology stack being quick to develop and easy to deploy locally and align with the monolithic architecture.
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* PHP (Laravel) + NoSQL (MongoDB)
+* Node.js (Express) + MongoDB
+* C# + MySQL
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+Chosen option: "PHP (Laravel) + NoSQL (MongoDB)", because Laravel can provide the authentication and RBAC support required aligning with the security requirements of the system. A NoSQL backend such as MongoDB provides a flexible schema design which speeds up the initial develoipment and testing phases of a new system.
 
-<!-- This is an optional element. Feel free to remove. -->
+### Consequences
+
+* Good, because the use of a Framework and Lightweight Database can speed up the development of a prototype and the use of the Built-in Laravel Auth can simplify RBAC whilst still aligning with a monilithic design.
+  
+* Bad, because the use of NoSQL may limit the use of complex relational queries and lacks the scalability requirements of a fully functional version of the system.
+  
+# Week 4
+{Title}
+## Context and Problem Statement
+
+The Complaint Management System needs a working proof of concept (POC) that demonstrates the core system functions. With the Technology stack being quick to develop and easy to deploy locally and align with the monolithic architecture.
+
+## Considered Options
+
+* PHP (Laravel) + NoSQL (MongoDB)
+* Node.js (Express) + MongoDB
+* C# + MySQL
+
+## Decision Outcome
+
+Chosen option: "PHP (Laravel) + NoSQL (MongoDB)", because Laravel can provide the authentication and RBAC support required aligning with the security requirements of the system. A NoSQL backend such as MongoDB provides a flexible schema design which speeds up the initial develoipment and testing phases of a new system.
+
 ### Consequences
 
 * Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
 * Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
 * … <!-- numbers of consequences can vary -->
-# Week 4
-
 # Week 5
 
 # Week 6
