@@ -1,4 +1,4 @@
-# Week 2
+# Week 1
 Architecture Style Decision
 
 ## Context and Problem Statement
@@ -20,7 +20,7 @@ Chosen option: "Monolithic Architecture", because it simplifies early developmen
 * Good, because it can make debugging and testing easier.
 * Bad, because it has Limited scalability and will impact the system as the user base grows.
 
-# Week 3
+# Week 2
 Technology Stack Decisions
 
 ## Context and Problem Statement
@@ -43,27 +43,32 @@ Chosen option: "PHP (Laravel) + NoSQL (MongoDB)", because Laravel can provide th
   
 * Bad, because the use of NoSQL may limit the use of complex relational queries and lacks the scalability requirements of a fully functional version of the system.
   
-# Week 4
-{Title}
+# Week 3
+Security Considerations
+
 ## Context and Problem Statement
 
-The Complaint Management System needs a working proof of concept (POC) that demonstrates the core system functions. With the Technology stack being quick to develop and easy to deploy locally and align with the monolithic architecture.
+The CMS requires secure authentication and authorization to ensure that only valid users can log in and access permitted functionality. These roles include Consumer, Help Desk Agent, Help Desk Manager, and System Administrator.
 
 ## Considered Options
 
-* PHP (Laravel) + NoSQL (MongoDB)
-* Node.js (Express) + MongoDB
-* C# + MySQL
+* Custom PHP Auth logic within controllers
+* Laravel Middleware (Auth + Role)
+* JWT Token-based authentication
+* OAuth 2.0 / Single Sign-On
 
 ## Decision Outcome
 
-Chosen option: "PHP (Laravel) + NoSQL (MongoDB)", because Laravel can provide the authentication and RBAC support required aligning with the security requirements of the system. A NoSQL backend such as MongoDB provides a flexible schema design which speeds up the initial develoipment and testing phases of a new system.
+Chosen option: "Laravel Middleware", because Laravel's Auth and Middleware system ensures only logged in users can access the CMS and that checks will be constantly put in place to confirm user roles for RBAC enforcement.
 
 ### Consequences
 
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
+* Good, because easier to develop due to having the support for session-based auth in the framework.
+  
+* Bad, because session-based model may be less ideal for large distributed systems.
+
+# Week 4
+
 # Week 5
 
 # Week 6
@@ -71,7 +76,3 @@ Chosen option: "PHP (Laravel) + NoSQL (MongoDB)", because Laravel can provide th
 # Week 7
 
 # Week 8
-
-# Week 9
-
-# Week 10
