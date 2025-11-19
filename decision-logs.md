@@ -68,7 +68,25 @@ Chosen option: "Laravel Middleware", because Laravel's Auth and Middleware syste
 * Bad, because session-based model may be less ideal for large distributed systems.
 
 # Week 4
+Technology Stack Decisions (Revised)
 
+## Context and Problem Statement
+
+The Complaint Management System needs a working proof of concept (POC) that demonstrates the core system functions. With the Technology stack being quick to develop and easy to deploy locally and align with the monolithic architecture.
+
+## Considered Options
+
+* PHP (Laravel) + NoSQL (MongoDB)
+* PHP (Laravel) + Sqlite
+  
+## Decision Outcome
+
+Chosen option: "PHP (Laravel) + Sqlite", due to in the scope of my PoC, it seemed like the more suitable option over NoSQL having a more structured data compared to NoSQL
+### Consequences
+
+* Good, because the use of a Framework and a structured database can speed up the development of a prototype and the use of the Built-in Laravel Auth can simplify RBAC whilst still aligning with a monilithic design.
+  
+* Bad, because the use of NoSQL may limit the use of complex relational queries and lacks the scalability requirements of a fully functional version of the system.
 # Week 5
 
 # Week 6
