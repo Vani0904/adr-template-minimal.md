@@ -87,7 +87,4 @@ Chosen option: "PHP (Laravel) + Sqlite", due to in the scope of my PoC, it seeme
 * Good, because the use of a Framework and a structured database can speed up the development of a prototype and the use of the Built-in Laravel Auth can simplify RBAC whilst still aligning with a monilithic design.
   
 * Bad, because the use of NoSQL may limit the use of complex relational queries and lacks the scalability requirements of a fully functional version of the system.
-# Decision 5
-
-# Decision 6
 
